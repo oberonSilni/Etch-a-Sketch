@@ -1,0 +1,25 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+
+.container{
+    height: 50rem;
+    width: 50rem;
+    margin:auto;
+    display:flex;
+    border:1px solid;
+}
+
+.split{
+    flex: 1 1 auto;
+    border: 1px solid;
+    display:flex;
+    flex-direction: column;
+}
+
+.element{
+    border: 1px solid;
+    flex: 1 1 auto;
+}
