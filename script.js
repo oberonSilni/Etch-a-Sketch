@@ -24,4 +24,4 @@ function makeDivs(number){
 
 }
 
-makeDivs(16);
+makeDivs(20);
