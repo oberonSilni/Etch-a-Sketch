@@ -25,3 +25,28 @@ function makeDivs(number){
 }
 
 makeDivs(20);
+
+
+let elements = document.querySelectorAll(".element");
+
+elements.forEach(element => {
+    element.addEventListener('mouseover', (e)=>{ 
+        let element1 = e.target; 
+        randomColor();
+        element1.style.backgroundColor = color;   
+    });
+});
+
+let color;
+
+function randomColor(){
+    let randomNumber = Math.floor(Math.random()*8);
+    if(randomNumber===1){color = "red";}
+    else if(randomNumber===2){color = "blue";}
+    else if(randomNumber===3){color = "green";}
+    else if(randomNumber===4){color = "pink";}
+    else if(randomNumber===5){color = "blueviolet";}
+    else if(randomNumber===6){color = "black";}
+    else if(randomNumber===7){color = "crimson";}
+    else if(randomNumber===8){color = "cyan";}
+}
