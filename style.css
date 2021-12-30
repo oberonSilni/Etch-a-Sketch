@@ -23,13 +23,12 @@ flex-direction:column;
 
 .split{
     flex: 1 1 auto;
-    border: 1px solid;
     display:flex;
     flex-direction: column;
 }
 
 .element{
-    border: 1px solid;
+    border: 0.3px solid;
     flex: 1 1 auto;
 }
 
