@@ -10,6 +10,7 @@ display:flex;
 justify-content: center;
 align-items: center;
 background-color: aquamarine;
+flex-direction:column;
 }
 
 .container{
@@ -30,4 +31,10 @@ background-color: aquamarine;
 .element{
     border: 1px solid;
     flex: 1 1 auto;
+}
+
+.button{
+    margin:1rem;
+    height:2rem;
+    width:8rem;
 }

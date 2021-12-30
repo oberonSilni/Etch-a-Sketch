@@ -1,9 +1,14 @@
 let i=0;
 let y=0;
 let container = document.querySelector(".container");
+let size = 20;
+
 
 
 function makeDivs(number){
+
+i=0;
+
 
     while(i<number){
         y=0;
@@ -24,8 +29,14 @@ function makeDivs(number){
 
 }
 
-makeDivs(20);
 
+
+
+makeDivs(size);
+addRainbow();
+
+
+function addRainbow(){
 
 let elements = document.querySelectorAll(".element");
 
@@ -37,7 +48,13 @@ elements.forEach(element => {
     });
 });
 
+}
+
+
 let color;
+
+
+
 
 function randomColor(){
     let randomNumber = Math.floor(Math.random()*8);
@@ -50,3 +67,20 @@ function randomColor(){
     else if(randomNumber===7){color = "crimson";}
     else if(randomNumber===8){color = "cyan";}
 }
+
+
+
+let button = document.querySelector(".button");
+
+button.addEventListener('click', (b) => {
+
+    
+document.querySelectorAll('.element').forEach(c => c.remove());
+document.querySelectorAll('.split').forEach(c => c.remove());
+
+size = window.prompt("Choose 1 - 100");
+
+makeDivs(size);
+addRainbow();
+});
+
